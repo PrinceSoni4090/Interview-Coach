@@ -28,10 +28,10 @@ const StatsCards = ({ assessments }) => {
     };
     return (
         <div className='grid gap-4 md:grid-cols-3'>
-            <Card>
+            <Card className="group transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25 hover:bg-primary/5">
                 <CardHeader className="flex flex-row space-y-0 pb-2 justify-between">
                     <CardTitle className="text-sm font-medium">Average Score</CardTitle>
-                    <Trophy className="h-4 w-4 text-muted-foreground" />
+                    <Trophy className="h-4 w-4 text-muted-foreground transition-transform duration-300 group-hover:scale-110 group-hover:text-primary" />
                 </CardHeader>
                 <CardContent>
                     <div className="text-2xl font-bold">{getAveragescore()}%</div>
@@ -40,10 +40,10 @@ const StatsCards = ({ assessments }) => {
                     </p>
                 </CardContent>
             </Card>
-            <Card>
+            <Card className="group transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25 hover:bg-primary/5">
                 <CardHeader className="flex flex-row space-y-0 pb-2 justify-between">
                     <CardTitle className="text-sm font-medium">Questions Practiced</CardTitle>
-                    <Brain className="h-4 w-4 text-muted-foreground" />
+                    <Brain className="h-4 w-4 text-muted-foreground transition-transform duration-300 group-hover:scale-110 group-hover:text-primary" />
                 </CardHeader>
                 <CardContent>
                     <div className="text-2xl font-bold">{getTotalQuestions()}</div>
@@ -52,10 +52,10 @@ const StatsCards = ({ assessments }) => {
                     </p>
                 </CardContent>
             </Card>
-            <Card>
+            <Card className="group transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25 hover:bg-primary/5">
                 <CardHeader className="flex flex-row space-y-0 pb-2 justify-between">
                     <CardTitle className="text-sm font-medium">Latest Score</CardTitle>
-                    <Trophy className="h-4 w-4 text-muted-foreground" />
+                    <Trophy className="h-4 w-4 text-muted-foreground transition-transform duration-300 group-hover:scale-110 group-hover:text-primary" />
                 </CardHeader>
                 <CardContent>
                     <div className="text-2xl font-bold">
