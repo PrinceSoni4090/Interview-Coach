@@ -30,7 +30,7 @@ export default function Home() {
               return (
                 <Card
                   key={index}
-                  className="border-2 hover:border-primary transition-colors duration-300"
+                  className="border-2 hover:border-primary transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 >
                   <CardContent className="pt-6 text-center flex flex-col items-center">
                     <div className="flex flex-col items-center justify-center">
